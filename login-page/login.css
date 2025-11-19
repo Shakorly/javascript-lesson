@@ -1,24 +1,25 @@
 * {
-    margin : 0;
-    padding: 0;
-    box-sizing: border-box;
     box-sizing: border-box;
 }
 
 
+
+
 body{
     display: flex;
-    justify-content : center;
-    align-items: center;
-    background-color: rgb(131, 234, 131);
+    justify-content : center; 
+    align-items: center; 
+    background-color: rgb(130, 227, 130);
     height: 100vh;
     font-family:'Times New Roman', Times, serif;
+    padding: 0;
+     margin : 0;
 
 }
 
 .content-wrapper{
     background-color: white;
-    border-radius:10px;
+    /* border-radius:10px; */
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
     width: 550px;
     padding: 60px 40px;
@@ -31,11 +32,23 @@ body{
     background-color: hsla(0, 9%, 91%, 0.918);
     border: none;
     padding: 30px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     font-size: 30px;
     color: #000000;
     transition: background-color 0.3s;
 }
+
+/* 
+
+*/
+
+
+ /* 
+ 
+ use rem  
+ 
+ */
+
 
 
 .input-text:focus{
@@ -46,23 +59,27 @@ body{
     width: 100%;
     background-color: #08a544;
     padding: 20px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     font-size: 25px;
     font-weight: bold;
     cursor: pointer;
     letter-spacing: 3px;
+    border: none;
+    color: white;
 
     
 }
 .btn:hover{
-    background-color: #30593e;
+    background-color: #5ebe78;
+    color: white;
 }
 
 .register-section{
     text-align: center;
     color: #181818;
-    font-size: 23px
+    font-size: 24px
 }
+
 .register-section a{
     color: #287028;
     text-decoration: none;
