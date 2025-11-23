@@ -1,14 +1,15 @@
 *{
     margin:0;
     padding:0;
-    box-sizing: border_size;
+    box-sizing: border_box;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:25px;
+   
 }
 
 body{
     background-color:rgb(36, 33, 33);
     color:white;
+     font-size:25px;
 }
 
 nav{
@@ -40,6 +41,10 @@ nav a:hover{
     align-items:center;
     margin-top:4rem
 
+}
+
+.intro, .services-about{
+    flex-wrap:wrap;
 }
 
 .intro h1 span{
@@ -97,7 +102,7 @@ nav a:hover{
 .service-text{
     text-align:center;
     justify-content:space-between;
-    margin:2rem;
+    margin:1rem;
     line-height:2rem;
 }
 
@@ -119,4 +124,72 @@ nav a:hover{
 .number-count h3{
     color:#F25A29;
     font-size:2rem;
+}
+
+
+/* desktop response */
+@media (max-width: 1200px) {
+    .intro {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .img img {
+        width: 25rem;
+    }
+}
+
+/* tablet response */
+@media (max-width: 900px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img img {
+        width: 20rem;
+        margin-top: 2rem;
+    }
+
+    .services-about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* mobile  response*/
+@media (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .intro {
+        padding: 1rem;
+    }
+
+    .img img {
+        width: 15rem;
+    }
+
+    .button {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1rem;
+    }
+
+    .number-count {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
 }
