@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border_size;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:25px;
+}
+
+body{
+    background-color:rgb(36, 33, 33);
+    color:white;
+}
+
+nav{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:2rem;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap: 2rem
+}
+
+nav a{
+    text-decoration:none;
+    color: white;
+    transition:0.3s
+}
+
+nav a:hover{
+    color:#F25A29
+}
+
+.intro{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    margin-top:4rem
+
+}
+
+.intro h1 span{
+    color:#F25A29
+}
+
+.img img{
+    width:30rem;
+    border-radius:50%
+}
+.button{
+    margin-top: 2rem;
+    display:flex;
+    gap:2rem;
+    align-items:center;
+    padding:4rem;
+    justify-content:center;
+}
+
+.project-btn {
+    padding: 2rem;
+    background-color:#F25A29;
+    border:none;
+    color:white;
+    cursor:pointer;
+}
+.project-btn:hover{
+    background-color:transparent;
+    border:3px solid #F25A29;
+}
+
+.resume-btn{
+    padding:2rem;
+    background-color:transparent;
+    border:3px solid #F25A29;
+    color:white;
+    cursor:pointer;
+
+}
+
+.resume-btn:hover{
+    background-color:#F25A29
+}
+
+.services-about{
+    justify-content:space-around;
+    display:flex;
+}
+
+.services{
+    display:flex;
+    justify-content:space-between;
+}
+
+.service-text{
+    text-align:center;
+    justify-content:space-between;
+    margin:2rem;
+    line-height:2rem;
+}
+
+
+.about p{
+    max-width: 550px;
+    line-height: 1rem;
+    margin-top:1rem;
+}
+
+.number-count{
+    display:flex;
+    gap:2rem;
+    margin-top: 3rem;
+    justify-content:space-around;
+    text-align:center;
+}
+
+.number-count h3{
+    color:#F25A29;
+    font-size:2rem;
+}
