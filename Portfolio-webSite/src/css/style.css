@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding:0;
-    box-sizing: border_box;
+    box-sizing: border-box;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    
 }
@@ -33,6 +33,23 @@ nav a{
 
 nav a:hover{
     color:#F25A29
+}
+
+.menu-bar{
+    display:none;
+    flex-direction: column;
+    cursor:pointer;
+    gap: 4px
+
+}
+
+.menu-bar span{
+    width: 30px;
+    height: 4px;
+    background-color: red;
+    border-radius:3px
+   
+    
 }
 
 .intro{
@@ -193,3 +210,30 @@ nav a:hover{
         gap: 1.5rem;
     }
 }
+
+/* menu bar  */
+@media(max-width: 768px){
+    
+    .menu-bar{
+        display:flex;
+
+    }
+    .nav-link{
+        display:none;
+        flex-direction:column;
+        background-color:#9a3b1c;
+        width:40%;
+        padding:15px;
+        margin-top:3px
+    }
+
+    .nav-link.show{
+        display: flex;
+    }
+
+    .nav-link li a{
+        padding: 10px;
+        font-size: 17px
+    }
+}
+
