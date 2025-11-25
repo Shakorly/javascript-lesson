@@ -14,7 +14,7 @@ body{
 
 nav{
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items:center;
     padding:2rem;
 }
@@ -216,12 +216,16 @@ nav a:hover{
     
     .menu-bar{
         display:flex;
+        margin-left:auto;
 
+    }
+
+    nav ul{
+        display:none;
     }
     .nav-link{
         display:none;
         flex-direction:column;
-        background-color:#9a3b1c;
         width:40%;
         padding:15px;
         margin-top:3px
