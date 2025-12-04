@@ -1,0 +1,153 @@
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+    background-color:rgb(194, 215, 233)
+}
+
+.nav-menu{
+    display: flex;
+    gap: 5rem;
+    background-color: rgb(14, 102, 225);
+    color:aliceblue;
+    justify-content: space-between;
+    
+}
+
+.nav-url{
+    display: flex;
+    gap: 4rem;
+    padding: 3rem;
+    font-weight: bold;
+
+    
+}
+
+.nav-url a{
+     color:aliceblue;
+     text-decoration: none;
+     font-size: 2rem
+}
+
+.nav-url a:hover{
+    color: red
+}
+
+/* nav-social-link */
+
+.nav-social-link{
+    display: flex;
+    gap: 4rem;
+    padding: 2rem;
+    align-items: center;
+    font-size: 3rem;
+    margin-left: 20rem;
+}
+
+.nav-social-link a{
+    color: white;
+   
+}
+
+.logo-advert{
+    display:flex;
+    justify-content: space-between;
+    margin: 4rem
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    font-size: 2rem;
+    
+}
+
+.advert{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: rgb(31, 112, 241);
+    margin-top: 3rem;
+    border-color: rgb(243, 237, 237);
+    border-style: solid;
+    color: white;
+}
+
+.inner-2{
+    color: black;
+    font-size: 3rem;
+    padding:0%.5rem;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 2rem;
+}
+
+.meainBar-search{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    padding: 3rem;
+    background-color: rgb(7, 7, 7);
+    
+}
+.meainBar-search a{
+    text-decoration: none;
+    color: white;
+    padding: 3rem;
+    font-size: 3rem;
+    align-items: center;  
+}
+
+.mainBar a:hover{
+    background-color: #ff0000;
+    padding: 3rem;
+
+}
+
+.main-content{
+    display: flex;
+    justify-content: space-between;
+    
+   
+}
+
+.main-content{
+    display: flex;
+    justify-content: space-around;   
+    text-align: center;
+    font-size: 3rem;
+}
+
+.layer-1{
+    background-color: white;
+    margin-right: 9rem;
+    margin: 3rem
+    
+    
+}
+
+.button-icon-text{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    gap: 8rem;
+}
+
+.layer-1 img{
+    width: 100%;
+    
+}
+
+.icon-text-image-1, .icon-text-image-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    font-size: 3rem;
+   margin-top: 5rem;
+
+}
