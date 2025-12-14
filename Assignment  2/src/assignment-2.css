@@ -94,6 +94,11 @@ body{
     border-radius: 2rem;
 }
 
+.inner-2:hover{
+    color:red;
+    cursor:pointer
+}
+
 .meainBar-search{
     display: flex;
     justify-content: space-between;
@@ -113,7 +118,7 @@ body{
 
 .mainBar a:hover{
     background-color: #ff0000;
-    padding: 3rem;
+    padding: 1rem;
 
 }
 
