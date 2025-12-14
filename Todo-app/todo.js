@@ -41,7 +41,7 @@ function renderTasks() {
                 <p class="task-text">${taskItem.task}</p>
                 <div>
                     <div class="edit-text">
-                        <button class="edit-button">Edit</button>
+                        <button class="edit-button" data-id="${taskItem.id}" >Edit</button>
                         <button class="delete-button" id="deletebtn" data-id="${taskItem.id}">Delete</button>
                     </div>
                 </div>
@@ -57,10 +57,17 @@ function renderTasks() {
 function eventBtn(){
     const btns = document.querySelectorAll('.delete-button');
     const completeBox = document.querySelectorAll('.complete-checkbox');
+    const editButton = document.querySelectorAll('.edit-button');
 
     btns.forEach(btn =>{
         btn.addEventListener('click', () => {
             deleteBtn(Number(btn.dataset.id))
+        })
+    })
+
+    editButton.forEach(btn =>{
+        btn.addEventListener('click', ()=>{
+            editBtn(Number(btn.dataset.id))
         })
     })
 
@@ -77,12 +84,27 @@ function deleteBtn(id){
     renderTasks();
 }
 
-function completeCheckbox(id){
-    const completeBox = taskList.find(item => item.id !== id)
-    if (completeBox){
-        backgrounColor: blue
-    }
+function editBtn(id){
+    const task = taskList.find(item => item.id === id)
+    if (!task)
+        return;
+
+    const newText = prompt("Enter your new item", task.task);
+    if(!newText || newText.trim() == '') return;
+    task.task = newText ;
+
+
+    renderTasks()
 }
+
+// function completeCheckbox(id){
+//     const completeBox = taskList.find(item => item.id !== id)
+//     if (completeBox){
+//         backgrounColor: blue
+//     }
+
+//     renderTasks()
+// }
 
 
 
