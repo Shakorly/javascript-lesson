@@ -85,13 +85,13 @@ function deleteBtn(id){
 }
 
 function editBtn(id){
-    const task = taskList.find(item => item.id === id)
-    if (!task)
+    const selectedTask = taskList.find(item => item.id === id)
+    if (!selectedTask)
         return;
 
-    const newText = prompt("Enter your new item", task.task);
+    const newText = prompt("Enter your new item", selectedTask.task);
     if(!newText || newText.trim() == '') return;
-    task.task = newText ;
+    selectedTask.task = newText ;
 
 
     renderTasks()
