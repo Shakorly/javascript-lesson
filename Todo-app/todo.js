@@ -71,7 +71,7 @@ function eventBtn(){
         })
     })
 
-    completeBox.forEach('btn', () =>{
+    completeBox.forEach(btn, () =>{
         btn.addEventListener('check', () => {
             deleteBtn(Number(btn.dataset.id))
         })
